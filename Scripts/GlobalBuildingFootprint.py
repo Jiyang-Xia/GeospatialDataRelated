@@ -7,7 +7,10 @@ import os
 import tempfile
 import fiona
 
-# This script forks from Microsoft Global Building Footprint Projects
+'''
+ This script forks from Microsoft Global Building Footprint Projects
+ url:https://github.com/microsoft/GlobalMLBuildingFootprints)
+'''
 # Geometry copied from https://geojson.io
 aoi_geom = {
     "coordinates": [
