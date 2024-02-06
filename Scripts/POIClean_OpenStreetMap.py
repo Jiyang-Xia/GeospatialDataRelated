@@ -2,7 +2,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-def Clean(poi_file):
+def Clean(poi_file, clean_poi_data):
     df = pd.read_csv(poi_file, encoding='latin-1', sep='|')
     df.head()
     #Read columns of POI dataset
@@ -26,4 +26,5 @@ if __name__ == "__main__":
     poi_file = "your_input_poi.csv"
     clean_poi_data = "output_clean_poi.csv"
 
-    Clean(poi_file)
+    Clean(poi_file, clean_poi_data)
+    

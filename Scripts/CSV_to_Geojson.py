@@ -2,7 +2,7 @@ import pandas as pd
 import geopandas as gpd
 from shapely.wkt import loads
 
-def Csv2Geojson(csv_file):
+def Csv2Geojson(csv_file, output_geojson_path):
     df = pd.read_csv(csv_file, encoding="latin-1")
     # choose and change columns to convert and take care the one contains geo information, e.g., 'geometry' or 'centroid'
 
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     csv_file = "your_input.csv"
     output_geojson_path = "your_output.geojson"
 
-    Csv2Geojson(csv_file)
+    Csv2Geojson(csv_file, output_geojson_path)
     print(f"Conversion from CSV to GeoJSON is complete. GeoJSON file saved to {output_geojson_path}")

@@ -21,8 +21,8 @@ def visualize_geojson(geojson_file):
 
 if __name__ == "__main__":
     csv_file = "filtered_Paris_poi.csv"
-
     # 调用函数
     geojson_file = CSVread(csv_file)
+
     # 可视化 GeoDataFrame
     visualize_geojson(geojson_file)
